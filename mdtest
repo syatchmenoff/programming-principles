@@ -1,0 +1,5 @@
+#!/bin/sh
+
+TMP_FILE=`mktemp /tmp/mdtest.XXXXXXXXXXX`.html
+markdown $1 > $TMP_FILE
+open $TMP_FILE
